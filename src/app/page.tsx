@@ -1,9 +1,24 @@
-import Image from "next/image";
+"use client"
+import React, { useState } from "react";
 
 export default function Home() {
+
+  const[text, setText] = useState("")
+
+  const handleSumbit = async (e: React.FormEvent) => {};
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-     <h1>hi bruh</h1>
+    <div className="flex  ">
+      <form className="flex items-center" onSubmit={handleSumbit}>
+        <input
+          type="text"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder="The text or details you want to translate"
+          required
+        />
+        <button className="bg-emerald-500 hover:bg-emerald-800">Translate</button>
+      </form>
     </div>
   );
 }
