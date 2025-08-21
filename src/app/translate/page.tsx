@@ -14,6 +14,13 @@ export default function Home() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const currentCount = parseInt(localStorage.getItem("requestCount") ?? "0");
+
+    if(currentCount>25) {
+      alert("You have reached your free limit limit of translations, try again after some time")
+    }
+
     setLoading(true);
 
     try {
@@ -27,6 +34,8 @@ export default function Home() {
 
       const data = await response.json();
       setSummary(data);
+
+      localStorage.setItem("requestCount", String(currentCount +1));
     } catch (error) {
       console.error("Error in sending data", error);
     } finally {
