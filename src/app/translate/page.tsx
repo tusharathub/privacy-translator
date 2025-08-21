@@ -28,7 +28,7 @@ export default function Home() {
     }
   };
 return (
-  <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-100 flex items-center justify-center py-10">
+  <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-100 flex items-center justify-center py-10 ">
     <div className="w-full max-w-2xl bg-white bg-opacity-95 rounded-3xl shadow-2xl p-8 mx-2">
       <h1 className="text-3xl md:text-4xl font-extrabold text-indigo-700 text-center mb-8">
         Plain-Language Privacy & Terms Summarizer
