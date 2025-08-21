@@ -21,7 +21,7 @@ const App = () => {
             <a href="#how-it-works" className="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">How It Works</a>
             <a href="#pricing" className="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Pricing</a>
             <a href="#faq" className="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">FAQ</a>
-            <a href="/www.github.com/tusharathub" target="_blank" className="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Connect</a>
+            <a href="www.github.com/tusharathub" target="_blank" className="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Connect</a>
           </nav>
         </header>
 
