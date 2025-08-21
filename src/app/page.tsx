@@ -32,7 +32,7 @@ const App = () => {
             Effortless Understanding,<br className="hidden md:inline" /> Instantly Realization.
           </h1>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-8">
-            Do you also feel skeptical while accepting terms and conditions on a website you've never visited before? 
+            Do you also feel skeptical while accepting terms and conditions on a website you have never visited before? 
           </p>
           <Link
             id="main-cta"

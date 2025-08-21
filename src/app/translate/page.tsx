@@ -1,9 +1,15 @@
 "use client";
 import React, { useState } from "react";
 
+type SummaryResponse = {
+  summary : string,
+  risks: string[],
+  tips: string[],
+}
+
 export default function Home() {
   const [text, setText] = useState("");
-  const [summary, setSummary] = useState<any>(null);
+  const [summary, setSummary] = useState<SummaryResponse | null>(null);
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
