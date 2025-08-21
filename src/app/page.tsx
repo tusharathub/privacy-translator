@@ -74,11 +74,12 @@ const App = () => {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
             Enjoy this powerful translator at no cost. 
           </p>
-          <button
+          <Link
+            href="/translate"
             className="py-4 px-10 text-lg font-bold text-white bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full shadow-xl hover:from-blue-600 hover:to-indigo-700 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300"
           >
             Start Translating Now
-          </button>
+          </Link>
         </section>
 
         {/* FAQ Section */}
@@ -100,11 +101,12 @@ const App = () => {
         <section className="text-center py-20">
           <h2 className="text-4xl font-black text-gray-900 mb-4">Ready to Break the commercial Language Barrier?</h2>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">Join thousands of users who are using Privacy-Translator to know what they are getting into</p>
-          <button
+          <Link
+            href="/translate"
             className="py-4 px-10 text-lg font-bold text-white bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full shadow-xl hover:from-blue-600 hover:to-indigo-700 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300"
           >
             Get Started Today
-          </button>
+          </Link>
         </section>
 
         {/* Footer */}
